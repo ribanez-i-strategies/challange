@@ -17,8 +17,8 @@ public class ProductoDaoImpl extends GeneralDao implements ProductoDao {
 		String hqlQuery = eUtils.getQByName("pdoCte.getAllActivesByCteId");
 		String active = "1";
 		try {
-			List<Object> list = (List<Object>) findByHQuery(hqlQuery, new Object[]{cliId, active});
-			return list;
+			//List<Object> list = (List<Object>) findByHQuery(hqlQuery, new Object[]{cliId, active});
+			//return list;
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}

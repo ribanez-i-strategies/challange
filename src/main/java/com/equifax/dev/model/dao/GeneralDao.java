@@ -16,7 +16,7 @@ public class GeneralDao {
     @Autowired
     HibernateTemplate hibernateTemplate;
 
-    public List<?> findByHQuery(String hqlQuery, Object[] values) throws Exception {
+   public List<?> findByHQuery(String hqlQuery, Object[] values) throws Exception {
         List<?> items = Collections.emptyList();
         try {
             Query<?> query = hibernateTemplate.getSessionFactory().getCurrentSession().createQuery(hqlQuery);
